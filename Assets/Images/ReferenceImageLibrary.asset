@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
-  m_Name: ReferenceImageLibraryTrainStation
+  m_Name: ReferenceImageLibrary
   m_EditorClassIdentifier: 
   m_GuidLow: 5123643290642472204
   m_GuidHigh: 15639945982420129215
@@ -21,9 +21,19 @@ MonoBehaviour:
       m_GuidLow: 5205890168362080984
       m_GuidHigh: 7847500789692669615
     m_SerializedTextureGuid:
-      m_GuidLow: 0
-      m_GuidHigh: 0
+      m_GuidLow: 1600136851087967210
+      m_GuidHigh: 17861797505826245403
     m_Size: {x: 0, y: 0}
     m_SpecifySize: 0
-    m_Name: 
+    m_Name: Gare
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4979003157259616522
+      m_GuidHigh: 12819956655824201135
+    m_SerializedTextureGuid:
+      m_GuidLow: 9535437492208365603
+      m_GuidHigh: 10913847703187288344
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: Mairie
     m_Texture: {fileID: 0}
