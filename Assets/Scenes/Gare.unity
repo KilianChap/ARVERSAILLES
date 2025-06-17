@@ -155,10 +155,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <trackablesChanged>k__BackingField:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 189428911}
+        m_TargetAssemblyTypeName: ModelSpawn, Assembly-CSharp
+        m_MethodName: OnTrackablesChanged
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
   m_SerializedLibrary: {fileID: 11400000, guid: d94c9ed8159e6054fba45d784b67c88d,
     type: 2}
-  m_MaxNumberOfMovingImages: 0
+  m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 0}
 --- !u!114 &189428906
 MonoBehaviour:
@@ -252,10 +264,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67beff40206f5eb41a6df488d2574a64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modelList: []
+  modelList:
+  - {fileID: 919132149155446097, guid: 4bd3bdbe0ecf0d342bfe71410fe5cec8, type: 3}
   GareSpawn: {fileID: 0}
-  MairieSpawn: {fileID: 3690641864908031341, guid: faf477ff55c53e347aa3ac4efd72c1a0,
-    type: 3}
+  MairieSpawn: {fileID: 1242015645}
 --- !u!1 &641535471
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,7 +842,7 @@ Transform:
   m_GameObject: {fileID: 1242015645}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

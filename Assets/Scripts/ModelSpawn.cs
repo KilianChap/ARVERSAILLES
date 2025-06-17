@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using UnityEngine.XR.ARSubsystems;
 
 public class ModelSpawn : MonoBehaviour
 {
@@ -9,28 +10,11 @@ public class ModelSpawn : MonoBehaviour
     public GameObject MairieSpawn;
 
     private Dictionary<string, GameObject> spawnedModels = new Dictionary<string, GameObject>();
-    private ARTrackedImageManager trackedImageManager;
 
-    void Awake()
+    // Appelé automatiquement par Unity depuis l'inspecteur
+    public void OnTrackablesChanged(ARTrackablesChangedEventArgs<ARTrackedImage> eventArgs)
     {
-        trackedImageManager = FindFirstObjectByType<ARTrackedImageManager>();
-    }
-
-    void OnEnable()
-    {
-        if (trackedImageManager != null)
-            trackedImageManager.trackablesChanged.AddListener(OnTrackablesChanged);
-    }
-
-    void OnDisable()
-    {
-        if (trackedImageManager != null)
-            trackedImageManager.trackablesChanged.RemoveListener(OnTrackablesChanged);
-    }
-
-    private void OnTrackablesChanged(ARTrackablesChangedEventArgs<ARTrackedImage> eventArgs)
-    {
-        foreach (ARTrackedImage trackedImage in eventArgs.added)
+        foreach (var trackedImage in eventArgs.added)
         {
             string imageName = trackedImage.referenceImage.name;
 
@@ -38,15 +22,11 @@ public class ModelSpawn : MonoBehaviour
             {
                 foreach (var model in modelList)
                 {
-                    if (model.name == imageName)
+                    if (model.name == "Mairie" && imageName == "A")
                     {
-                        Vector3 spawnPos = (imageName == "Gare") ? GareSpawn.transform.position : MairieSpawn.transform.position;
-                        Quaternion spawnRot = (imageName == "Gare") ? GareSpawn.transform.rotation : MairieSpawn.transform.rotation;
-
-                        GameObject instance = Instantiate(model, spawnPos, spawnRot);
+                        GameObject instance = Instantiate(model, MairieSpawn.transform.position, MairieSpawn.transform.rotation);
                         spawnedModels.Add(imageName, instance);
-
-                        Debug.Log("Modèle instancié : " + imageName);
+                        Debug.Log("Mairie instanciée via l'image A");
                         break;
                     }
                 }
