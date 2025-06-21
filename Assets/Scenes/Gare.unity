@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 189428906}
   - component: {fileID: 189428905}
   - component: {fileID: 189428911}
+  - component: {fileID: 189428912}
   m_Layer: 0
   m_Name: XR Origin (Mobile AR)
   m_TagString: Untagged
@@ -265,9 +266,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   modelList:
-  - {fileID: 2696137404681621163, guid: f75bbecbe23b27f4c9a5a6522147a5e5, type: 3}
+  - {fileID: 2647910823446748968, guid: f75bbecbe23b27f4c9a5a6522147a5e5, type: 3}
+  - {fileID: 7977119846227034004, guid: 6a18b31d295f64744b1c47a1730fad7b, type: 3}
   GareSpawn: {fileID: 0}
-  MairieSpawn: {fileID: 1242015645}
+  MairieSpawn1897: {fileID: 1242015645}
+  MairieSpawn1907: {fileID: 1668485842}
+--- !u!114 &189428912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 189428904}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67beff40206f5eb41a6df488d2574a64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  modelList: []
+  GareSpawn: {fileID: 0}
+  MairieSpawn1897: {fileID: 0}
+  MairieSpawn1907: {fileID: 0}
 --- !u!1 &641535471
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1242015646}
   m_Layer: 0
-  m_Name: MairieSpawn
+  m_Name: MairieSpawn1897
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -842,7 +861,7 @@ Transform:
   m_GameObject: {fileID: 1242015645}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.08}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -879,6 +898,37 @@ Transform:
   m_Children:
   - {fileID: 1228404554}
   m_Father: {fileID: 189428910}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1668485842
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1668485843}
+  m_Layer: 0
+  m_Name: MairieSpawn1907
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1668485843
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668485842}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1723004727
 GameObject:
@@ -1042,4 +1092,5 @@ SceneRoots:
   - {fileID: 663151485}
   - {fileID: 2039450613}
   - {fileID: 1242015646}
+  - {fileID: 1668485843}
   - {fileID: 641535476}
