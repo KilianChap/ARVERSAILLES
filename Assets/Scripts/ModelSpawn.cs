@@ -22,11 +22,11 @@ public class ModelSpawn : MonoBehaviour
             {
                 foreach (var model in modelList)
                 {
-                    if (model.name == "Mairie" && imageName == "A")
+                    if (model.name == "mairie1907" && imageName == "A")
                     {
                         GameObject instance = Instantiate(model, MairieSpawn.transform.position, MairieSpawn.transform.rotation);
                         spawnedModels.Add(imageName, instance);
-                        Debug.Log("Mairie instanciée via l'image A");
+                        Debug.Log("mairie1907 instanciée via l'image A");
                         break;
                     }
                 }
