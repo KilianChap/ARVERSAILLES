@@ -267,6 +267,7 @@ MonoBehaviour:
   modelList:
   - {fileID: 2647910823446748968, guid: f75bbecbe23b27f4c9a5a6522147a5e5, type: 3}
   - {fileID: 7977119846227034004, guid: 6a18b31d295f64744b1c47a1730fad7b, type: 3}
+  - {fileID: 3893913728982974848, guid: 2cbbf7514d8e3a84b8efbb4dc6876435, type: 3}
   GareSpawn: {fileID: 2039450612}
   MairieSpawn1897: {fileID: 1242015645}
   MairieSpawn1907: {fileID: 1668485842}

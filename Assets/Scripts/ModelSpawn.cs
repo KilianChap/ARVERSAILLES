@@ -37,6 +37,13 @@ public class ModelSpawn : MonoBehaviour
                         Debug.Log("mairie1907 instanciee via l'image B");
                         break;
                     }
+                    if (model.name == "Gare" && imageName == "C")
+                    {
+                        GameObject instance = Instantiate(model, GareSpawn.transform.position, GareSpawn.transform.rotation);
+                        spawnedModels.Add(imageName, instance);
+                        Debug.Log("Gare instanciee via l'image C");
+                        break;
+                    }
                 }
             }
         }
